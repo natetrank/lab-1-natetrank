@@ -181,5 +181,7 @@ class TestCases(unittest.TestCase):
 
     def test_up_one_octave_m(self):
         note1 = MusicalNote(100, 2)
-        self.assertEqual(up_one_octave(note1), None)
+        self.assertEqual(up_one_octave_m(note1), None)
 
+if __name__ == "__main__":
+    unittest.main()
