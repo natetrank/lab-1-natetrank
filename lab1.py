@@ -153,8 +153,8 @@ class MusicalNote:
 
 
 def up_one_octave(note):
-    note.pitch *= 2
-    return note
+    new_note = MusicalNote(note.pitch * 2, note.duration)
+    return new_note
 
 #* 4)
 # up_one_octave_m: MusicalNote -> None
@@ -162,7 +162,7 @@ def up_one_octave(note):
 
 
 def up_one_octave_m(note):
-    none.pitch *= 2
+    note.pitch *= 2
     return None
 
 
